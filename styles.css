@@ -1,11 +1,25 @@
 html {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
 
 button {
     background-color: #3882f6;
     color: white;
-    border-radius: 15%;
+    border-radius: 10px;
+    border: solid;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 .header {
@@ -14,49 +28,51 @@ button {
     align-items: center;
     background-color: #1f2937;
     color: white;
-    text-align: start
+    padding: 20px 60px;
+}
+
+.header h3 {
+    margin: 0;
 }
 
 .header a {
-    justify-content:end;
+    margin-left: 20px;
     text-decoration: none;
-    color:white;
+    color: white;
 }
 
 .body {
     display: flex;
     flex-flow: column;
+    gap: 60px;
 }
 
 .body .body1 {
     display: flex;
+    justify-content: space-between;
     background-color: #1f2937;
     color: white;
-    padding-bottom: 100px;
-    padding-top: 100px;
-    padding-left: 160px;
-    padding-right: 160px;
+    padding: 100px 160px;
 }
 
 .body .body1 .body1-1 {
     display: flex;
     flex-flow: column;
-    padding-right: 50px;
+    max-width: 50%;
+    gap: 20px;
     justify-content: center;
-    align-items: top;
 }
 
 #img1 {
-    height: 200px;
+    height: 300px;
     width: 450px;
+    background-color: #ccc; /* Placeholder background for the image */
 }
 
-.img {
-    height: 150px;
-    width: 150px;
-    border-radius: 20%;
-    margin-bottom: -10px;
-    border: solid #3882f6;
+.body .body2 {
+    text-align: center;
+    color: #1f2937;
+    padding: 40px 20px; /* Reduced padding for a more compact section */
 }
 
 .body .body2 {
@@ -75,42 +91,49 @@ button {
     margin-bottom: 50px;
 }
 
+.img {
+    height: 150px;
+    width: 150px;
+    border: solid #3882f6;
+    border-radius: 15%;
+}
+
 .body .body3 {
     display: flex;
     flex-flow: column;
     text-align: center;
     background-color: #e5e7eb;
     color: #1f2937;
-    padding-left: 280px;
-    padding-right: 280px;
+    padding: 60px 160px;
+    font-style: italic;
+    font-size: 24px;
 }
 
-.container {
-    margin-left: 180px;
-    margin-right: 180px;
-    margin-top: 80px;
-    margin-bottom: 60px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+.body .body3 p:last-child {
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.body .body4 {
+    background-color: #3882f6;
+    color: white;
+    text-align: center;
+    padding: 40px 160px;
 }
 
 .body .body4 .container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    align-content: center;
-    justify-content: center;
-    background-color: #3882f6;
-    color: white;
+    padding: 30px;
+    border-radius: 10px;
 }
 
 .body .body4 .container .body4-1 {
-    display: flex;
-    flex-flow: column;
-    padding-right: 100px;
-    padding-bottom: 30px;
-    padding-top: 30px;
+    flex: 1;
+    text-align: left;
+    margin-right: 20px;
 }
 
 .footer {
