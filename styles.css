@@ -1,5 +1,10 @@
 .header {
     display: flex;
+    justify-content: space-between;
+}
+
+.header .uls {
+    justify-content:end;
 }
 
 .body {
@@ -7,6 +12,52 @@
     flex-flow: column;
 }
 
-.footer {
+.body .body1 {
+    display: flex;
+}
 
+.body .body1 .body1-1 {
+    display: flex;
+    flex-flow: column;
+}
+
+#img1 {
+    height: 200px;
+    width: 450px;
+}
+
+.body .body2 {
+    text-align: center;
+}
+
+.body .body2 .body2-1 {
+    display: flex;
+    text-align: center;
+    gap: 10px;
+}
+
+.body .body3 {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+}
+
+.body .body4 .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.body .body4 .container .body4-1 {
+    display: flex;
+    flex-flow: column;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+}
+
+.footer {
+    text-align: center;
 }
